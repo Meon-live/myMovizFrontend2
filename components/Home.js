@@ -40,7 +40,7 @@ function Home() {
   fetch('https://my-moviz-backend2.vercel.app/movies')
      .then(response => response.json())
      .then(data => { 
-      const addMovies = data.movies.results.map(addMovie => ({
+      const addMovies = data.movies.map(addMovie => ({
         title: addMovie.title,
         poster: `https://image.tmdb.org/t/p/w500/${addMovie.poster_path}`,
         voteAverage: addMovie.vote_average,
