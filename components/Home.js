@@ -26,7 +26,7 @@ function Home() {
         <FontAwesomeIcon icon={faCircleXmark} onClick={() => updateLikedMovies(data)} className={styles.crossIcon} />
       </div>
     );
-  });
+  }); 
 
   const popoverContent = (
     <div className={styles.popoverContent}>
